@@ -35,8 +35,8 @@ export default function App () {
 
   return (
     <Router>
-      <nav>
-        {routes.map(route => <Link key={route.key} to={route.path}>{route.key}</Link>)}
+      <nav className="nav">
+        {routes.map(route => <Link className="navItems" key={route.key} to={route.path}>{route.key}</Link>)}
       </nav>
       < Me />
       <Switch>
