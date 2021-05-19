@@ -75,11 +75,7 @@ export default function Projects () {
                 <div>
                     Javascript• React • Express • CSS
                 </div>
-                
-                
             </div>
-
-
         </div>
     )
 }
