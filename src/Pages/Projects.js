@@ -21,10 +21,12 @@ export default function Projects () {
                 <div className="techs">
                     Technologies used
                 </div>
+                <div>
                     HTML •
                     CSS: modals •                    
                     JavaScript: loops, math methods/randomization, array methods, event listeners, callback  
                 </div>
+            </div>
             <div className='single_Project'>
                 <div className="links">
                     <a target='blank' href='https://arichson.github.io/PkmnProj/#/'>
