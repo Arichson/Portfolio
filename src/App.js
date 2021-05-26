@@ -1,4 +1,4 @@
-import './App.css';
+import './main.css';
 import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import Contact from './Pages/Contact'
 import AboutMe from './Pages/AboutMe'

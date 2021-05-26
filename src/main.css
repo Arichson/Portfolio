@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+}
+
+.nav {
+  width: 100%;
+  padding: 5px;
+  background-color: #3e3e3e;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav .navItems {
+  color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.containAllOfMe {
+  display: flex;
+  justify-content: center;
+}
+.containAllOfMe .theBorder {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), gray);
+  width: 420px;
+  height: 240px;
+  display: flex;
+  flex-wrap: nowrap;
+  border: 2px solid black;
+}
+.containAllOfMe .theBorder .myPic {
+  display: flex;
+  align-self: center;
+  width: 35%;
+  height: fit-content;
+  background-size: cover;
+  border: 2px solid black;
+}
+.containAllOfMe .theBorder .meBox {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.containAllOfMe .theBorder .meBox .myName {
+  font-size: xx-large;
+}
+.containAllOfMe .theBorder .meBox .jobTitle {
+  font-size: large;
+}
+.containAllOfMe .theBorder .meBox .links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.containAllOfMe .theBorder .meBox .links .linkedIn {
+  display: flex;
+  align-items: center;
+}
+.containAllOfMe .theBorder .meBox .links .linkedIn .image {
+  width: 25px;
+}
+.containAllOfMe .theBorder .meBox .links .gitHub {
+  display: flex;
+  align-items: center;
+}
+.containAllOfMe .theBorder .meBox .links .gitHub .image {
+  width: 25px;
+}
+
+.allAboutMe .aboutMeDiv {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+.allAboutMe .educationDiv {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+.allAboutMe .educationDiv p .toTheRight {
+  position: absolute;
+  right: 5%;
+}
+
+.Projects .single_Project {
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+}
+.Projects .single_Project .links {
+  display: flex;
+  align-items: center;
+}
+.Projects .single_Project .description {
+  margin-bottom: 10px;
+}
+.Projects .single_Project .techs {
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=main.css.map */
