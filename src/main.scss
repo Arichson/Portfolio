@@ -1,0 +1,153 @@
+*{
+    margin:0;
+}
+.nav{
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(62, 62, 62);
+    display: flex;
+    justify-content: flex-end;
+    .navItems{
+        color: white;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+}
+.containAllOfMe {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 240px;
+    .theBorder{
+        position: absolute;
+        background: linear-gradient(to left, rgba(0,0,0,0),rgb(79, 79, 79));
+        // padding: 10px;
+        width: 420px;
+        height: 240px;
+        // max-width: 525px;
+        // max-height: 300px;
+        display: flex;
+        // justify-content: space-around;
+        flex-wrap: nowrap;
+        border: 2px solid black;
+        box-sizing: border-box;
+        .myPic{
+            display: flex;
+            align-self: center;
+            width: 35%;
+            height:fit-content;
+            background-size: cover;
+            border: 2px solid black;
+            box-sizing: border-box;
+            border-radius: 10px;
+            box-shadow: 0px 0px 7px white;
+        }
+        .corners {
+            position: absolute;
+            background-color: black;
+            width: 10px;
+            height: 10px;
+        }
+        .topLeft{
+            top: 0%;
+            left: 0%;
+            clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
+        }
+        .topRight{
+            top: 0%;
+            right: -.5%;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+        }
+        .bottomLeft{
+            bottom: 0%;
+            left: 0%;
+            clip-path: polygon(0% 100%, 0% 0%, 100% 100%);
+        }
+        .bottomRight{
+            bottom: 0%;
+            right: -.5%;
+            clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
+        }
+        .meBox{
+            // background-color: rgb(213, 213, 213);
+            // width: 100%;
+            width:100%;
+            padding: 5px;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+            align-items: center;
+            .myName{
+                
+                font-size: xx-large;
+            }
+            
+            .jobTitle{
+                font-size: large;
+            }
+            .littleInfo{
+                
+            }
+            .links{
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                .linkedIn {
+                    display: flex;
+                    align-items: center;
+                    .image{
+
+                        width: 25px;
+                    }
+                }
+                .gitHub{
+                    display: flex;
+                    align-items: center;
+                    .image{
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+.allAboutMe {
+    .aboutMeDiv{
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+        .aboutTitle{
+
+        }
+    }
+    .educationDiv{
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+        p{
+            .toTheRight{
+                position: absolute;
+                right: 5%
+            }
+        }
+    }
+}
+
+.Projects{
+    .single_Project{
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+        .links{
+            display: flex;
+            align-items: center;
+        }
+        .description{
+            margin-bottom: 10px;
+        }
+        .techs{
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import './App.css';
+import './main.css';
 import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom'
 import Contact from './Pages/Contact'
 import AboutMe from './Pages/AboutMe'
@@ -13,11 +13,11 @@ import {useState} from 'react'
 // If you don't want to use react router just rewrite the app component to not use it
 
 const routes = [
-  {
-    Component: Contact,
-    key: 'Contact',
-    path: '/contact'
-  },
+  // {
+  //   Component: Contact,
+  //   key: 'Contact',
+  //   path: '/contact'
+  // },
   {
     Component: Projects,
     key: 'Projects',
