@@ -14,38 +14,14 @@ export default function Projects () {
     const [pkPic, setPkPic] = useState(0)
     const [codrPic, setCodrPic] = useState(0)
     const [cookPic, setCookPic] = useState(0)
-    const [timer, setTimer] = useState("")
-    const [timer2, setTimer2] = useState("")
 
     const pkArray = [pk1, pk2, pk3]
     const cookArray = [cook1, cook2]
     const codrArray = [codr1, codr2]
     const hexArray = [hex1, hex2]
-    let interval = ""
-
-
-    const changePic = (e,array) => {
-        console.log(e.target.name)
-        if(e.target.name === "hex") {
-            // console.log(e.target)
-            setHexPic((hexPic+1)%array.length)
-        }
-        if(e.target.name === "pk") {
-            setPkPic((pkPic+1)%array.length)
-        }
-        if(e.target.name === "codr") {
-            setCodrPic((codrPic+1)%array.length)
-        }
-        if(e.target.name === "cook") {
-            setCookPic((cookPic+1)%array.length)
-        }
-    }
 
     const newFunc = () => {
-        console.log("hi")
         setHexPic((hexPic+1%hexArray.length))
-        console.log(hexPic+1%hexArray.length)
-        console.log(hexPic)
         setPkPic((pkPic+1)%pkArray.length)
         setCodrPic((codrPic+1)%codrArray.length)
         setCookPic((cookPic+1)%cookArray.length)
@@ -53,48 +29,25 @@ export default function Projects () {
         console.log(hexPic, pkPic, cookPic)
     }
     const newFunc2 = () => {
-        console.log("two")
         setHexPic((hexPic)%hexArray.length)
-        console.log(hexPic+1%hexArray.length)
-        console.log(hexPic)
         setPkPic((pkPic)%pkArray.length)
         setCodrPic((codrPic)%codrArray.length)
+        setCookPic((cookPic)%cookArray.length)
         setTimeout(newFunc, 5000)
         console.log(hexPic, pkPic, cookPic)
     }
-    // useEffect(() => {
-    //     setTimeout(newFunc, 5000)
-    // }, [timer])
-    // useEffect(() => {
-    //     setTimeout(newFunc, 5000)
-    // }, [timer2])
+
     useEffect(() => {
         setTimeout(newFunc, 5000)
     }, [])
-    // useEffect(() => {
-    //     setHexPic(hexArray[0])
-    //     setPkPic(pkArray[0])
-    //     // setCodrPic()
-    //     setCookPic(cookArray[0])
-    // }, [])
-
+ 
 
 
     return (
 
         <div className='Projects'>
             <div className='single_Project'>
-                <div className="projectPic"><img className="picture" 
-                // onLoad={ (e)=> {   interval = setInterval(() => {
-                    // changePic(e,hexArray)
-                    
-                    // console.log(e)
-                    // clearInterval()
-                    // }, 5000)
-                    // 
-                // clearInterval(interval)    
-                // }} 
-                src={hexArray[hexPic]}/></div>
+                <div className="projectPic"><img className="picture" src={hexArray[hexPic]}/></div>
                 <div className="information">
 
                     <div className="links">
