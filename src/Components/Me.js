@@ -10,7 +10,6 @@ export default function Me () {
                     <h1 className="myName"> Arichson Her </h1>
                     <h3 className="jobTitle">Front-end Software Engineer</h3>
                     <p className="littleInfo">Email: arichsonh@gmail.com</p>
-                    <p>Number: 559-835-3866</p>
                     <div className="links">
                         <a className="linkedIn" href='https://www.linkedin.com/in/arichsonh' target="blank"><img className="image" src="https://www.iconpacks.net/icons/2/free-linkedin-icon-2166-thumb.png" alt="Linked In" />Linked In</a> <br />
                         <a className="gitHub" href='https://github.com/Arichson?tab=repositories' target="blank"><img className="image" src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="Github" />Github</a>

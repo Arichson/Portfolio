@@ -1,5 +1,7 @@
 * {
   margin: 0;
+  color: black;
+  text-decoration: none;
 }
 
 .nav {
@@ -88,6 +90,8 @@
   width: 100%;
 }
 .containAllOfMe .theBorder .meBox .links .linkedIn {
+  text-decoration: none;
+  color: black;
   display: flex;
   align-items: center;
 }
@@ -95,6 +99,8 @@
   width: 25px;
 }
 .containAllOfMe .theBorder .meBox .links .gitHub {
+  text-decoration: none;
+  color: black;
   display: flex;
   align-items: center;
 }
@@ -121,15 +127,33 @@
   border: 2px solid black;
   margin: 10px;
   padding: 10px;
+  display: flex;
+  height: 250px;
+  align-items: center;
 }
-.Projects .single_Project .links {
+.Projects .single_Project .projectPic {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  border-right: 2px solid #c4c4c4;
+}
+.Projects .single_Project .projectPic .picture {
+  margin-right: 5px;
+  width: 250px;
+  max-height: 250px;
+  background-size: contain;
+}
+.Projects .single_Project .information {
+  margin-left: 5px;
+}
+.Projects .single_Project .information .links {
   display: flex;
   align-items: center;
 }
-.Projects .single_Project .description {
+.Projects .single_Project .information .description {
   margin-bottom: 10px;
 }
-.Projects .single_Project .techs {
+.Projects .single_Project .information .techs {
   margin-bottom: 5px;
   font-weight: 700;
 }
