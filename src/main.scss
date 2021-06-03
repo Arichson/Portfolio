@@ -176,3 +176,53 @@
         }
     }
 }
+
+.contactPage {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    .contactBox{
+        margin: 10px;
+        padding: 10px;;
+        width: 400px;
+        position: absolute;
+        top: 270px;
+        // height: 400px;
+        border: 2px solid black;
+        .myEmail{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        button{
+            position: absolute;
+            top: 10px;
+            left:10px;
+        }
+        .copyStatus{
+            background-color: rgb(121, 224, 121);
+            color: black;
+            position: absolute;
+            top: 0;
+            right:0;
+            padding:10px;
+        }
+        .form{
+            .contactItem{
+                display: flex;
+                margin-bottom: 10px;
+                // justify-content: space-around;
+                .word{
+                    width: 100px;
+                }
+            }
+            .messageDiv{
+
+                .inputs{
+                    width:70%;
+                    height:200px;
+                }
+            }
+        }
+    }
+}
