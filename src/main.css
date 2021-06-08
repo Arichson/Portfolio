@@ -1,7 +1,10 @@
 * {
   margin: 0;
-  color: black;
   text-decoration: none;
+}
+
+body {
+  background-color: gray;
 }
 
 .nav {
@@ -25,7 +28,7 @@
 }
 .containAllOfMe .theBorder {
   position: absolute;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0), #4f4f4f);
+  background: linear-gradient(to left, white, #4f4f4f);
   width: 420px;
   height: 240px;
   display: flex;
@@ -123,37 +126,63 @@
   right: 5%;
 }
 
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .Projects .single_Project {
   border: 2px solid black;
   margin: 10px;
-  padding: 10px;
-  display: flex;
-  height: 250px;
+  height: 500px;
+  width: 500px;
+  text-align: -webkit-center;
   align-items: center;
+}
+.Projects .single_Project h3 {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 40px;
 }
 .Projects .single_Project .projectPic {
   display: flex;
   align-items: center;
-  height: 100%;
-  border-right: 2px solid #c4c4c4;
+  justify-items: center;
+  height: 90%;
+  width: 90%;
+  padding: 10px;
+  margin: 0;
 }
 .Projects .single_Project .projectPic .picture {
-  margin-right: 5px;
-  width: 250px;
-  max-height: 250px;
+  width: 100%;
+  max-height: 100%;
   background-size: contain;
 }
 .Projects .single_Project .information {
-  margin-left: 5px;
+  position: absolute;
+  text-align: start;
+  padding: 10px;
+  width: 482px;
+  height: 484px;
+  transform: translateY(-93.6%);
+  opacity: 0.5;
+  background-color: black;
+  color: white;
 }
 .Projects .single_Project .information .links {
   display: flex;
   align-items: center;
+  vertical-align: center;
 }
-.Projects .single_Project .information .description {
+.Projects .single_Project .information .allInfo {
+  opacity: 0;
+  visibility: hidden;
+}
+.Projects .single_Project .information .allInfo .description {
+  background-color: green;
   margin-bottom: 10px;
 }
-.Projects .single_Project .information .techs {
+.Projects .single_Project .information .allInfo .techs {
   margin-bottom: 5px;
   font-weight: 700;
 }
@@ -165,6 +194,7 @@
   align-items: center;
 }
 .contactPage .contactBox {
+  background-color: #c9c9c9;
   margin: 10px;
   padding: 10px;
   width: 400px;
@@ -178,6 +208,8 @@
 }
 .contactPage .contactBox button {
   position: absolute;
+  border: 1px solid black;
+  border-radius: 5px;
   top: 10px;
   left: 10px;
 }

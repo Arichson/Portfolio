@@ -1,7 +1,10 @@
 *{
     margin:0;
-    color: black;
+    // color: black;
     text-decoration: none;
+}
+body{
+    background-color: gray;
 }
 .nav{
     width: 100%;
@@ -22,7 +25,7 @@
     height: 240px;
     .theBorder{
         position: absolute;
-        background: linear-gradient(to left, rgba(0,0,0,0),rgb(79, 79, 79));
+        background: linear-gradient(to left, rgb(255, 255, 255),rgb(79, 79, 79));
         // padding: 10px;
         width: 420px;
         height: 240px;
@@ -87,9 +90,6 @@
             .jobTitle{
                 font-size: large;
             }
-            .littleInfo{
-                
-            }
             .links{
                 display: flex;
                 justify-content: space-around;
@@ -140,38 +140,87 @@
 }
 
 .Projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // .hex{
+    //     grid-row-start: 1;
+    //     grid-row-end: 1;
+    //     grid-column-start: 1;
+    //     grid-column-end: 1;
+    // }
+    // .pk{
+    //     grid-column-start: 2;
+    //     grid-column-end: 2;
+    // }
+    // .codr{
+
+    // }
+    // .cook{
+
+    // }
     .single_Project{
         border: 2px solid black;
         margin: 10px;
-        padding: 10px;
-        display: flex;
-        height: 250px;
+        // display: flex;
+        height: 500px;
+        width: 500px;
+        text-align: -webkit-center;
         align-items: center;
+        
+        h3{
+            text-align: center;
+            background-color: rgba(0,0,0,.3);
+            height: 40px;
+
+        }
         .projectPic{
             display: flex;
             align-items: center;
-            height:100%;
-            border-right: 2px solid rgb(196, 196, 196);
+            justify-items: center;
+            height: 90%;
+            width: 90%;
+            padding: 10px;
+            margin: 0;
+            // border-right: 2px solid rgb(196, 196, 196);
             .picture{
-                margin-right: 5px;
-                width: 250px;
-                max-height: 250px;
+                // margin-right: 5px;
+                width: 100%;
+                max-height: 100%;
                 background-size: contain;
-            }
 
+            }
         }
         .information{
-            margin-left: 5px;
+            // margin-left: 5px;
+            // visibility: hidden;
+            position:absolute;
+            text-align: start;
+            padding: 10px;
+            width: 482px;
+            height: 484px;
+            // transform: translateY(-10%);
+            transform: translateY(-93.6%);
+            opacity: 0.5
+            ;
+            background-color: black;
+            color: white;
             .links{
                 display: flex;
                 align-items: center;
+                vertical-align: center;
             }
-            .description{
-                margin-bottom: 10px;
-            }
-            .techs{
-                margin-bottom: 5px;
-                font-weight: 700;
+            .allInfo{
+                opacity: 0;
+                visibility: hidden;
+                .description{
+                    background-color: green;
+                    margin-bottom: 10px;
+                }
+                .techs{
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                }
             }
         }
     }
@@ -183,6 +232,7 @@
     flex-flow: column;
     align-items: center;
     .contactBox{
+        background-color: rgb(201, 201, 201);
         margin: 10px;
         padding: 10px;;
         width: 400px;
@@ -196,6 +246,8 @@
         }
         button{
             position: absolute;
+            border: 1px solid black;
+            border-radius: 5px;
             top: 10px;
             left:10px;
         }
