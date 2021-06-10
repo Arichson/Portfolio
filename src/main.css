@@ -174,12 +174,7 @@ body {
   align-items: center;
   vertical-align: center;
 }
-.Projects .single_Project .information .allInfo {
-  opacity: 0;
-  visibility: hidden;
-}
 .Projects .single_Project .information .allInfo .description {
-  background-color: green;
   margin-bottom: 10px;
 }
 .Projects .single_Project .information .allInfo .techs {

@@ -1,0 +1,35 @@
+[
+
+    {
+        "title": "Hexacalour",
+        "class": "hex",
+        "github":"https://github.com/Arichson/first-game-made",
+        "link":"https://arichson.github.io/first-game-made/",
+        "description": "Hexcalour is a game of based on colors. This game is a two player game where each player competes to take over half the board. The first player who succeeds wons on that board.",
+        "tech": "HTML •CSS: modals •JavaScript: loops, math methods/randomization, array methods, event listeners, callback "
+    },
+    {
+        "title": "PkmnProj",
+        "class": "pk",
+        "github":"https://github.com/Arichson/PkmnProj",
+        "link":"https://arichson.github.io/PkmnProj/#/",
+        "description": "This website was made to provided a list of Pokemons with the help of PokeApi. The website will allow users to scan through the pages and look at all the different species of Pokemons. The website is mostly a Pokedex, meaning that it will not provided information about the games but rather just on the Pokemon themselves.",
+        "tech": "JavaScript: math methods/randomization, array methods, callback, Api data • React: Routers, Links, export function • CSS Modules, Responsive Design"
+    },
+    {
+        "title": "Codr",
+        "class": "codr",
+        "github":"https://github.com/bunmeevang/project-3-front",
+        "link":"https://bunmeevang.github.io/project-3-front/",
+        "description": "This Project was created as a media for people to meet and comment about things. This applications include posting.",
+        "tech": "JS: React • Python: Django •CSS "
+    },
+    {
+        "title": "The Cook Files",
+        "class": "cook",
+        "github":"https://github.com/Arichson/theCookFiles-Front",
+        "link":"https://60a71f1b3a2e6800078c3d4d--sleepy-wiles-fee4ff.netlify.app/",
+        "description": "This project was created so that users can find recipes and save them into their account. This website includes a login with authentication. It was built with React, Tailwind, Express, and a third party Api",
+        "tech": "Javascript• React • Express • CSS"
+    }
+]
