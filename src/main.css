@@ -135,21 +135,21 @@ body {
   border: 2px solid black;
   margin: 10px;
   height: 500px;
-  width: 500px;
+  min-width: 500px;
+  max-width: 500px;
   text-align: -webkit-center;
   align-items: center;
+  position: sticky;
 }
 .Projects .single_Project h3 {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 40px;
 }
 .Projects .single_Project .projectPic {
   display: flex;
   align-items: center;
   justify-items: center;
-  height: 90%;
-  width: 90%;
+  height: 88%;
+  width: 88%;
   padding: 10px;
   margin: 0;
 }
@@ -160,19 +160,29 @@ body {
 }
 .Projects .single_Project .information {
   position: absolute;
+  bottom: 0%;
   text-align: start;
   padding: 10px;
   width: 482px;
-  height: 484px;
-  transform: translateY(-93.6%);
-  opacity: 0.5;
-  background-color: black;
+  height: 20px;
   color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: height 1s, background-color 1s;
 }
 .Projects .single_Project .information .links {
-  display: flex;
+  text-align: center;
+  width: 100%;
   align-items: center;
   vertical-align: center;
+  opacity: 0;
+}
+.Projects .single_Project .information .links a {
+  text-decoration: underline;
+  color: white;
+}
+.Projects .single_Project .information .allInfo {
+  transition: opacity 1s;
+  opacity: 0;
 }
 .Projects .single_Project .information .allInfo .description {
   margin-bottom: 10px;
@@ -180,6 +190,22 @@ body {
 .Projects .single_Project .information .allInfo .techs {
   margin-bottom: 5px;
   font-weight: 700;
+}
+.Projects .single_Project .clicked.information {
+  position: absolute;
+  text-align: start;
+  padding: 10px;
+  width: 482px;
+  height: 482px;
+  transition: height 1s, background-color 1s;
+  transition-timing-function: ease;
+  background-color: black;
+  color: white;
+}
+.Projects .single_Project .clicked.information .links,
+.Projects .single_Project .clicked.information .allInfo {
+  transition: opacity 1s;
+  opacity: 1;
 }
 
 .contactPage {
